@@ -1,1 +1,21 @@
+package recursion;
+
+public class numbers {
+    static int cnt = 0;
+
+    public numbers() {
+    }
+
+    static void print() {
+        if (cnt != 3) {
+            System.out.println(cnt);
+            ++cnt;
+            print();
+        }
+    }
+
+    public static void main(String[] args) {
+        print();
+    }
+}
 

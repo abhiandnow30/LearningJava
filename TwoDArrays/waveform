@@ -1,0 +1,22 @@
+public class waveForm {
+    public static void main(String[] args) {
+        int[][] a = {{2, 3, 5},
+                  {3,5,8},
+                {4, 6, 0}};
+        waveForm(a);
+    }
+        private static void waveForm( int[][] a){
+        for(int col=0;col<a[0].length;col++){
+            if(col%2==0) {
+//                move down
+                for (int row = 0; row <a.length; row++) {
+                    System.out.print(a[row][col]+"");
+}
+                }else{
+                    for(int row= a.length-1;row>=0;row--){
+                        System.out.print(a[row][col]+"");              }
+}
+
+        }
+    }
+}

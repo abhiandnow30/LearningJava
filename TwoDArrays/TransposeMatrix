@@ -1,0 +1,22 @@
+https://leetcode.com/problems/transpose-matrix/
+
+
+class Solution {
+    public int[][] transpose(int[][] matrix) {
+        int rows=matrix.length;
+        // represents nbr of rows
+        int columns=matrix[0].length;
+        // represents nbr of columns
+        int[][]ans=new int[columns][rows];
+        // create a new 2DArray 
+        for(int i=0;i<rows;i++){
+        // iterating rows
+            for(int j=0;j<columns;j++){
+            // iterating columns
+                ans[j][i]=matrix[i][j];
+                // transposing of matrix elements to ans . 
+            }
+        } 
+        return ans;       
+    }
+}

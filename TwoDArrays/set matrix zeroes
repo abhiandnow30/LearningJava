@@ -1,0 +1,47 @@
+https://leetcode.com/problems/set-matrix-zeroes/
+
+if any element in the matrix is zero,then the row and col of that element is zero.
+
+
+class Solution {
+    public void setZeroes(int[][] matrix) {
+       int m=matrix.length;
+    //    nbr of rows
+        int n = matrix[0].length;
+        // nbr of cols
+        boolean isRow=false;
+        boolean isCol=false;
+        for(int i=0; i<m; i++){
+            for(int j=0; j<n; j++){
+                // iteration to find the [i][j]
+                if(matrix[i][j]==0){
+                    matrix[i][0]=0;
+                    matrix[0][j]=0;
+                   if(i==0) isRow=true;
+                    if(j==0)isCol=true;
+                }
+            }
+        }
+         for(int i=1; i<m; i++){
+            for(int j=1; j<n; j++){
+                // iteration for (m-1)*(n-1)
+                if(matrix[i][0]==0||matrix[0][j]==0){
+                    // front or adjascent elements of matrix is zero
+                    matrix[i][j]=0;
+                    
+                }
+            }
+        }
+        if(isRow){
+            for(int i=0;i<n;i++){
+                matrix[0][i]=0;
+            }
+        }
+        if(isCol){
+            for(int i=0;i<m;i++){
+                matrix[i][0]=0;
+            }
+        }
+        
+    }
+}

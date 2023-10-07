@@ -2,18 +2,9 @@ import java.util.*;
 public class MaximumElementInArray {
     public static void main(String[] args) {
         int[] array = {2, 5, 7, 6, 8};
-        int c = 0;
         Arrays.sort(array);
-        for (int i = 0; i < array.length; i++) {
-            if (c == 0) {
-                System.out.print(array[i]);
-                c++;
-            } 
-            else {
-                System.out.print("," + array[i]);
-            }
-
-
-        }
+        System.out.println(array[array.length-1]);
     }
 }
+
+        

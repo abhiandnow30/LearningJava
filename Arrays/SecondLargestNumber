@@ -1,10 +1,28 @@
 import java.util.Arrays;
+//the below code is found second largest number using sorting
 public class SecondLargestNumber {
     public static void main(String[] args) {
         int[] array={3,5,7,2,6,9};
                 Arrays.sort(array);
         System.out.println(array[array.length-2]);
 
+    }
+}
+//below code is found to find first&second maximum element without sorting
+class SecondMaximumElement {
+    public static void main(String[] args) {
+        int[] a={-1,-3,-4,-5,-7,9};
+        int fm=Integer.MIN_VALUE;
+        int sm=Integer.MIN_VALUE;
+        
+        for(int i=0;i<a.length;i++){
+            if(a[i]>fm){
+                sm=fm;
+                fm=a[i];
+            }
+        }
+        System.out.println(fm);
+        System.out.println(sm);
     }
 }
 

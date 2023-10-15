@@ -1,0 +1,11 @@
+public class divisibilitySix {
+    public static void main(String[] args) {
+        long num=12567484268l;
+        if(num%6==0){
+            System.out.println("yes");
+        }
+        else{
+            System.out.println("no");
+        }
+    }
+}

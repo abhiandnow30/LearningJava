@@ -1,0 +1,16 @@
+
+public class reverseNumbers {
+    public static void main(String[] args) {
+        int num=12345;
+        int rev=0;
+//        let reverse of a number =0
+        while(num>0){
+            rev=rev*10+num%10;
+//            num%10 we get the remainder and it is ones digit of a given number 
+            num=num/10;
+            //from this quotient(eliminating ones digit)
+        }
+        System.out.println(rev);
+    }
+
+}

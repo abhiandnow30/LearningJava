@@ -1,10 +1,16 @@
-class Divisibility{
-public static void main(String[] args){
-for(int i=250;i<=550;i++){
-	if(i%11==0)
+8.Write a program to print all numbers which are divisible by 11 from 250 to 550.
+
+
+class Divisibility
 {
-System.out.println(i);
-}
-}
-}
+	public static void main(String[] args)
+	{
+		for(int i=250;i<=550;i++)
+		{
+			if(i%11==0)
+			{
+			System.out.println(i);
+			}
+		}
+	}
 }

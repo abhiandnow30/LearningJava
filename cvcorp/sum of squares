@@ -1,0 +1,16 @@
+
+19.	Write programs to sum of the following Series.      5¬¬2  +  62  + 72 +..........+1022.          
+
+class p19
+{
+	public static void main(String[] args)
+	{
+		int sum=0;
+		for(int i=5;i<=102;i++)
+		{
+			int c =i*i;
+			sum=sum+c;
+		}
+		System.out.println(sum);
+	}
+}

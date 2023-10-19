@@ -1,32 +1,45 @@
+5.	Declare & initialize a number. Check whether the number is in range 0-100 or not. If not in range print invalid input. 
+        Else – if the number is in range 90-100 then print Super Smart, 80-90 print Smart,70-80 print smart enough,
+       60-70 print just smart, 35-60 print no smart, 0-35 print dump.
+
 import java.util.*;
 
-class Range{
-public static void main(String[] args){
-Scanner sc=new Scanner(System.in);
-int i=sc.nextInt();
-if(i>0 && i<100){
-
-     if(i>90 && i<=100){
-        System.out.println("super smart");
+class Range
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int i=sc.nextInt();
+		if(i>0 && i<100)
+		{
+			if(i>90 && i<=100)
+			{
+        			System.out.println("super smart");
+			}
+    			else if(i>80 && i<=90)
+			{
+				System.out.println("smart");
+			}
+     			else if(i>70 && i<=80)
+			{
+				System.out.println("smart enough");
+			}
+     			else if(i>60 && i<=70)
+			{
+				System.out.println("just smart");
+			}
+     		 	else if(i>35 && i<=60)
+			{
+				System.out.println("no smart");
+			}    
+        		else if(i>0 && i<=35)
+			{
+				System.out.println("dumm");
+			}
+		}
+		else
+		{
+			System.out.println("invalid input");
+		}
 	}
-     else if(i>80 && i<=90){
-	System.out.println("smart");
-	}
-     else if(i>70 && i<=80){
-	System.out.println("smart enough");
-	}
-     else if(i>60 && i<=70){
-	System.out.println("just smart");
-	}
-      else if(i>35 && i<=60){
-	System.out.println("no smart");
-	}    
-        else if(i>0 && i<=35){
-	System.out.println("dumm");
-	}
-}
-else{
-System.out.println("invalid input");
-}
-}
 }

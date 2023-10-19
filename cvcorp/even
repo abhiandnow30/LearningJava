@@ -1,9 +1,15 @@
-class even{
-public static void main(String[] args){
-for(int i= 700;i<=900;i++){
-if(i%2==0){
-System.out.println(i);
-}
-}
-}
+10.	Write a program to print all even numbers in range 700 to 900.
+
+class even
+{
+    public static void main(String[] args)  
+    {
+        for(int i= 700;i<=900;i++)
+            {
+            if(i%2==0)
+                {
+                System.out.println(i);
+                }
+            }
+      }
 }

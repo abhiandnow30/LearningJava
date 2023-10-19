@@ -1,9 +1,15 @@
-class odd{
-public static void main(String[] arrgs){
-for(int i=251;i>=51;i--){
-      if(i%2 != 0){
-System.out.println(i);
-       }
-    }
-  }
+11.	Write a program to print all odd numbers from 251 to 51. like (251, 249,...51)
+
+class odd
+{
+      public static void main(String[] args)
+      {
+            for(int i=251;i>=51;i--)
+            {
+                  if(i%2 != 0)
+                        {
+                        System.out.println(i);
+                        }
+            }
+      }
 }

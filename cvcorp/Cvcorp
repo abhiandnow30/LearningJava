@@ -1,7 +1,13 @@
-class Cvcorp{
-public static void main(String[] args){
-for(int i=0;i<33;i++){
-System.out.println("CVCORP");
-}
-}
+7.	Write a program to print CVCORP for 33 times.
+
+
+class Cvcorp
+{
+  public static void main(String[] args)
+  {
+    for(int i=0;i<33;i++)
+        {
+        System.out.println("CVCORP");
+        }
+  }
 }

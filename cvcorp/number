@@ -1,19 +1,33 @@
-class Number{
-public static void main(String[] args){
-int a=107;
-float k;
-if(a>100 && a<1000){
-   if(a%2==0){
-k=(float)a/3;
-       System.out.println(k);
-}
-   else{
-     k=(float)a/2;  
-System.out.println(k);
-}
-}
-else{
-System.out.println("wrongNumber");
-}
-}
+4.	Write a java program that performs the following tasks.
+a.	Store a number in a variable
+b.	If value is not in range (100-1000) prints wrong number else follows the steps
+c.	Check even or odd
+d.	If even divide the number by 3 and print the remainder
+e.	If odd divide the number by 2 and print the remainder. 
+
+
+class Number
+{
+   public static void main(String[] args)   
+   {
+      int a=107;
+      float k;
+      if(a>100 && a<1000)
+      {
+         if(a%2==0)
+         {
+            k=(float)a/3;
+            System.out.println(k);
+         }      
+         else
+         {
+            k=(float)a/2;  
+            System.out.println(k);
+         }
+      }
+      else
+      {
+      System.out.println("wrongNumber");
+      }
+   }
 }

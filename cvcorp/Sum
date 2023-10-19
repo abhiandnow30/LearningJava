@@ -1,9 +1,14 @@
-class Sum{
-public static void main(String[] args){
-int sum=0;
-for(int i=56;i<=156;i++){
-sum=sum+i;
-}
-System.out.println(sum);
-}
+9.	Write a program to sum all the numbers from 56 to 153.
+
+class Sum
+{
+    public static void main(String[] args)
+    {
+    int sum=0;
+    for(int i=56;i<=156;i++)
+        {
+        sum=sum+i;
+        }
+          System.out.println(sum);
+    }
 }

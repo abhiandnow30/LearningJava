@@ -1,0 +1,25 @@
+https://leetcode.com/problems/find-greatest-common-divisor-of-array/
+
+
+class Solution {
+    public int findGCD(int[] nums) {
+        Arrays.sort(nums);
+//sorting a given nums array.
+        int a=nums[0];
+//0th element in an array.
+        int b=nums[nums.length-1];
+//last element in an array.
+        int c=0;
+        for(int i=1;i<=a;i++){
+            if(a%i==0 && b%i==0){
+                c=i;
+
+            }
+           
+        }
+        System.out.print(c);
+        return c;
+
+        
+    }
+}

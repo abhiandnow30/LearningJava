@@ -1,0 +1,56 @@
+package collections;
+
+public class employee {
+    private int id;
+    private String name;
+    private int salary;
+    employee(int id,String name,int salary)
+    {
+        this.id=id;
+        this.name=name;
+        this.salary=salary;
+    }
+    public int getId()
+    {
+        return id;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public int getSalary()
+    {
+        return salary;
+    }
+    public String toString()
+    {
+        return id+" "+name+" "+salary;
+    }
+}
+package collections;
+
+import java.util.ArrayList;
+
+public class test {
+    public static void main(String[] args) {
+        ArrayList<employee>al=new ArrayList<>();
+        al.add(new employee(3,"abhi",3400));
+        al.add(new employee(5,"abhilasha",8700));
+        al.add(new employee(3,"abhila",9800));
+        al.add(new employee(9,"abhilas",300));
+        al.add(new employee(7,"abhilash",340));
+        int sum=0,avg=0;
+        for(employee e:al)
+        {
+            sum+= e.getSalary();
+        }
+        avg=sum/al.size();
+        for(employee e:al)
+        {
+            if(e.getSalary()>avg)
+            {
+                System.out.println(e);
+            }
+        }
+    }
+}
